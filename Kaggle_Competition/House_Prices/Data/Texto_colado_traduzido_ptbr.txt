@@ -1,0 +1,523 @@
+MSSubClass: Identifica o tipo de moradia envolvida na venda.
+
+        20	1 PAVIMENTO - 1946 OU MAIS RECENTE, TODOS OS ESTILOS
+        30	1 PAVIMENTO - 1945 OU MAIS ANTIGO
+        40	1 PAVIMENTO COM SÓTÃO ACABADO, TODAS AS IDADES
+        45	1 1/2 PAVIMENTO - INACABADO, TODAS AS IDADES
+        50	1 1/2 PAVIMENTO ACABADO, TODAS AS IDADES
+        60	2 PAVIMENTOS - 1946 OU MAIS RECENTE
+        70	2 PAVIMENTOS - 1945 OU MAIS ANTIGO
+        75	2 1/2 PAVIMENTOS, TODAS AS IDADES
+        80	NÍVEIS DIVIDIDOS OU MULTINÍVEL
+        85	ENTRADA EM NÍVEL DIVIDIDO
+        90	DUPLEX - TODOS OS ESTILOS E IDADES
+       120	PUD DE 1 PAVIMENTO (Empreendimento Planejado) - 1946 OU MAIS RECENTE
+       150	PUD DE 1 1/2 PAVIMENTO - TODAS AS IDADES
+       160	PUD DE 2 PAVIMENTOS - 1946 OU MAIS RECENTE
+       180	PUD - MULTINÍVEL - INCLUI NÍVEL/ENTRADA DIVIDIDOS
+       190	CONVERSÃO PARA 2 FAMÍLIAS - TODOS OS ESTILOS E IDADES
+
+MSZoning: Identifica a classificação geral de zoneamento da venda.
+
+       A	Agrícola
+       C	Comercial
+       FV	Residencial Floating Village
+       I	Industrial
+       RH	Residencial de alta densidade
+       RL	Residencial de baixa densidade
+       RP	Parque residencial de baixa densidade
+       RM	Residencial de média densidade
+
+LotFrontage: Pés lineares de rua conectados à propriedade.
+
+LotArea: Tamanho do lote em pés quadrados.
+
+Street: Tipo de acesso viário à propriedade.
+
+       Grvl	Cascalho
+       Pave	Pavimentado
+
+Alley: Tipo de acesso por beco à propriedade.
+
+       Grvl	Cascalho
+       Pave	Pavimentado
+       NA 	Sem acesso por beco
+
+LotShape: Forma geral da propriedade.
+
+       Reg	Regular
+       IR1	Levemente irregular
+       IR2	Moderadamente irregular
+       IR3	Irregular
+
+LandContour: Grau de planicidade da propriedade.
+
+       Lvl	Quase plano/nivelado
+       Bnk	Em barranco - elevação rápida e significativa do nível da rua até a construção
+       HLS	Encosta - inclinação significativa de um lado ao outro
+       Low	Depressão
+
+Utilities: Tipo de serviços públicos disponíveis.
+
+       AllPub	Todos os serviços públicos (eletricidade, gás, água e esgoto)
+       NoSewr	Eletricidade, gás e água (fossa séptica)
+       NoSeWa	Apenas eletricidade e gás
+       ELO	Apenas eletricidade
+
+LotConfig: Configuração do lote.
+
+       Inside	Lote interno
+       Corner	Lote de esquina
+       CulDSac	Cul-de-sac
+       FR2	Frente em 2 lados da propriedade
+       FR3	Frente em 3 lados da propriedade
+
+LandSlope: Inclinação da propriedade.
+
+       Gtl	Inclinação suave
+       Mod	Inclinação moderada
+       Sev	Inclinação severa
+
+Neighborhood: Localizações físicas dentro dos limites da cidade de Ames.
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	Sul e Oeste da Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+
+Condition1: Proximidade a diferentes condições.
+
+       Artery	Adjacente a via arterial
+       Feedr	Adjacente a via coletora
+       Norm	Normal
+       RRNn	A menos de 200 pés de ferrovia Norte-Sul
+       RRAn	Adjacente a ferrovia Norte-Sul
+       PosN	Próximo a característica externa positiva -- parque, cinturão verde etc.
+       PosA	Adjacente a característica externa positiva
+       RRNe	A menos de 200 pés de ferrovia Leste-Oeste
+       RRAe	Adjacente a ferrovia Leste-Oeste
+
+Condition2: Proximidade a diferentes condições, se houver mais de uma.
+
+       Artery	Adjacente a via arterial
+       Feedr	Adjacente a via coletora
+       Norm	Normal
+       RRNn	A menos de 200 pés de ferrovia Norte-Sul
+       RRAn	Adjacente a ferrovia Norte-Sul
+       PosN	Próximo a característica externa positiva -- parque, cinturão verde etc.
+       PosA	Adjacente a característica externa positiva
+       RRNe	A menos de 200 pés de ferrovia Leste-Oeste
+       RRAe	Adjacente a ferrovia Leste-Oeste
+
+BldgType: Tipo de moradia.
+
+       1Fam	Casa unifamiliar isolada
+       2FmCon	Conversão para duas famílias; originalmente construída como moradia unifamiliar
+       Duplx	Duplex
+       TwnhsE	Sobrado/geminado de extremidade
+       TwnhsI	Sobrado/geminado interno
+
+HouseStyle: Estilo da moradia.
+
+       1Story	Um pavimento
+       1.5Fin	Um pavimento e meio: segundo nível acabado
+       1.5Unf	Um pavimento e meio: segundo nível inacabado
+       2Story	Dois pavimentos
+       2.5Fin	Dois pavimentos e meio: segundo nível acabado
+       2.5Unf	Dois pavimentos e meio: segundo nível inacabado
+       SFoyer	Entrada em nível dividido
+       SLvl	Nível dividido
+
+OverallQual: Avalia o material e o acabamento geral da casa.
+
+       10	Muito excelente
+       9	Excelente
+       8	Muito bom
+       7	Bom
+       6	Acima da média
+       5	Médio
+       4	Abaixo da média
+       3	Regular
+       2	Ruim
+       1	Muito ruim
+
+OverallCond: Avalia a condição geral da casa.
+
+       10	Muito excelente
+       9	Excelente
+       8	Muito bom
+       7	Bom
+       6	Acima da média
+       5	Médio
+       4	Abaixo da média
+       3	Regular
+       2	Ruim
+       1	Muito ruim
+
+YearBuilt: Data original de construção.
+
+YearRemodAdd: Data de reforma/remodelação; igual à data de construção se não houve reforma ou acréscimos.
+
+RoofStyle: Tipo de telhado.
+
+       Flat	Plano
+       Gable	Duas águas
+       Gambrel	Gambrel (celeiro)
+       Hip	Quatro águas
+       Mansard	Mansarda
+       Shed	Uma água
+
+RoofMatl: Material do telhado.
+
+       ClyTile	Argila ou telha
+       CompShg	Telha padrão composta/asfáltica
+       Membran	Membrana
+       Metal	Metal
+       Roll	Rolo
+       Tar&Grv	Piche e cascalho
+       WdShake	Telhas de madeira rústicas
+       WdShngl	Telhas de madeira
+
+Exterior1st: Revestimento externo principal da casa.
+
+       AsbShng	Telhas/revestimento de amianto
+       AsphShn	Telhas/revestimento asfáltico
+       BrkComm	Tijolo comum
+       BrkFace	Tijolo aparente
+       CBlock	Bloco de concreto/cinza
+       CemntBd	Placa cimentícia
+       HdBoard	Painel rígido
+       ImStucc	Estuque de imitação
+       MetalSd	Revestimento metálico
+       Other	Outro
+       Plywood	Compensado
+       PreCast	Pré-moldado
+       Stone	Pedra
+       Stucco	Estuque
+       VinylSd	Revestimento vinílico
+       Wd Sdng	Revestimento de madeira
+       WdShing	Telhas/revestimento de madeira
+
+Exterior2nd: Revestimento externo secundário da casa, se houver mais de um material.
+
+       AsbShng	Telhas/revestimento de amianto
+       AsphShn	Telhas/revestimento asfáltico
+       BrkComm	Tijolo comum
+       BrkFace	Tijolo aparente
+       CBlock	Bloco de concreto/cinza
+       CemntBd	Placa cimentícia
+       HdBoard	Painel rígido
+       ImStucc	Estuque de imitação
+       MetalSd	Revestimento metálico
+       Other	Outro
+       Plywood	Compensado
+       PreCast	Pré-moldado
+       Stone	Pedra
+       Stucco	Estuque
+       VinylSd	Revestimento vinílico
+       Wd Sdng	Revestimento de madeira
+       WdShing	Telhas/revestimento de madeira
+
+MasVnrType: Tipo de revestimento de alvenaria.
+
+       BrkCmn	Tijolo comum
+       BrkFace	Tijolo aparente
+       CBlock	Bloco de concreto/cinza
+       None	Nenhum
+       Stone	Pedra
+
+MasVnrArea: Área do revestimento de alvenaria em pés quadrados.
+
+ExterQual: Avalia a qualidade do material no exterior.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Médio/típico
+       Fa	Regular
+       Po	Ruim
+
+ExterCond: Avalia a condição atual do material no exterior.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Médio/típico
+       Fa	Regular
+       Po	Ruim
+
+Foundation: Tipo de fundação.
+
+       BrkTil	Tijolo e telha
+       CBlock	Bloco de concreto/cinza
+       PConc	Concreto moldado
+       Slab	Laje
+       Stone	Pedra
+       Wood	Madeira
+
+BsmtQual: Avalia a altura do porão.
+
+       Ex	Excelente (100+ polegadas)
+       Gd	Bom (90-99 polegadas)
+       TA	Típico (80-89 polegadas)
+       Fa	Regular (70-79 polegadas)
+       Po	Ruim (<70 polegadas)
+       NA	Sem porão
+
+BsmtCond: Avalia a condição geral do porão.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Típico - leve umidade permitida
+       Fa	Regular - umidade, algumas rachaduras ou assentamento
+       Po	Ruim - rachaduras severas, assentamento ou umidade
+       NA	Sem porão
+
+BsmtExposure: Refere-se a paredes com saída externa ou nível de jardim.
+
+       Gd	Boa exposição
+       Av	Exposição média (níveis divididos ou entradas em nível dividido normalmente pontuam média ou acima)
+       Mn	Exposição mínima
+       No	Sem exposição
+       NA	Sem porão
+
+BsmtFinType1: Classificação da área acabada do porão.
+
+       GLQ	Bons aposentos habitáveis
+       ALQ	Aposentos habitáveis médios
+       BLQ	Aposentos habitáveis abaixo da média
+       Rec	Sala de recreação média
+       LwQ	Baixa qualidade
+       Unf	Inacabado
+       NA	Sem porão
+
+BsmtFinSF1: Pés quadrados acabados do tipo 1.
+
+BsmtFinType2: Classificação da área acabada do porão, se houver múltiplos tipos.
+
+       GLQ	Bons aposentos habitáveis
+       ALQ	Aposentos habitáveis médios
+       BLQ	Aposentos habitáveis abaixo da média
+       Rec	Sala de recreação média
+       LwQ	Baixa qualidade
+       Unf	Inacabado
+       NA	Sem porão
+
+BsmtFinSF2: Pés quadrados acabados do tipo 2.
+
+BsmtUnfSF: Pés quadrados inacabados da área do porão.
+
+TotalBsmtSF: Total de pés quadrados da área do porão.
+
+Heating: Tipo de aquecimento.
+
+       Floor	Aquecedor de piso
+       GasA	Forno de ar quente forçado a gás
+       GasW	Aquecimento a gás por água quente ou vapor
+       Grav	Forno por gravidade
+       OthW	Aquecimento por água quente ou vapor que não seja a gás
+       Wall	Aquecedor de parede
+
+HeatingQC: Qualidade e condição do aquecimento.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Médio/típico
+       Fa	Regular
+       Po	Ruim
+
+CentralAir: Ar-condicionado central.
+
+       N	Não
+       Y	Sim
+
+Electrical: Sistema elétrico.
+
+       SBrkr	Disjuntores padrão e fiação Romex
+       FuseA	Caixa de fusíveis acima de 60 AMP e toda fiação Romex (média)
+       FuseF	Caixa de fusíveis de 60 AMP e principalmente fiação Romex (regular)
+       FuseP	Caixa de fusíveis de 60 AMP e principalmente fiação knob-and-tube (ruim)
+       Mix	Misto
+
+1stFlrSF: Pés quadrados do primeiro andar.
+
+2ndFlrSF: Pés quadrados do segundo andar.
+
+LowQualFinSF: Pés quadrados acabados de baixa qualidade, em todos os andares.
+
+GrLivArea: Área habitável acima do nível do solo em pés quadrados.
+
+BsmtFullBath: Banheiros completos no porão.
+
+BsmtHalfBath: Lavabos/meios banheiros no porão.
+
+FullBath: Banheiros completos acima do nível do solo.
+
+HalfBath: Lavabos/meios banheiros acima do nível do solo.
+
+Bedroom: Quartos acima do nível do solo; não inclui quartos no porão.
+
+Kitchen: Cozinhas acima do nível do solo.
+
+KitchenQual: Qualidade da cozinha.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Típica/média
+       Fa	Regular
+       Po	Ruim
+
+TotRmsAbvGrd: Total de cômodos acima do nível do solo; não inclui banheiros.
+
+Functional: Funcionalidade da casa; assumir típica, salvo quando houver deduções justificadas.
+
+       Typ	Funcionalidade típica
+       Min1	Pequenas deduções 1
+       Min2	Pequenas deduções 2
+       Mod	Deduções moderadas
+       Maj1	Grandes deduções 1
+       Maj2	Grandes deduções 2
+       Sev	Severamente danificada
+       Sal	Apenas para salvamento/recuperação
+
+Fireplaces: Número de lareiras.
+
+FireplaceQu: Qualidade da lareira.
+
+       Ex	Excelente - lareira de alvenaria excepcional
+       Gd	Boa - lareira de alvenaria no nível principal
+       TA	Média - lareira pré-fabricada na área principal ou lareira de alvenaria no porão
+       Fa	Regular - lareira pré-fabricada no porão
+       Po	Ruim - fogão Ben Franklin
+       NA	Sem lareira
+
+GarageType: Localização da garagem.
+
+       2Types	Mais de um tipo de garagem
+       Attchd	Anexa à casa
+       Basment	Garagem no porão
+       BuiltIn	Embutida/integrada à casa - normalmente com cômodo acima da garagem
+       CarPort	Garagem coberta aberta
+       Detchd	Separada da casa
+       NA	Sem garagem
+
+GarageYrBlt: Ano em que a garagem foi construída.
+
+GarageFinish: Acabamento interno da garagem.
+
+       Fin	Acabada
+       RFn	Parcialmente acabada
+       Unf	Inacabada
+       NA	Sem garagem
+
+GarageCars: Tamanho da garagem em capacidade de carros.
+
+GarageArea: Tamanho da garagem em pés quadrados.
+
+GarageQual: Qualidade da garagem.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Típica/média
+       Fa	Regular
+       Po	Ruim
+       NA	Sem garagem
+
+GarageCond: Condição da garagem.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Típica/média
+       Fa	Regular
+       Po	Ruim
+       NA	Sem garagem
+
+PavedDrive: Entrada de veículos pavimentada.
+
+       Y	Pavimentada
+       P	Pavimentação parcial
+       N	Terra/cascalho
+
+WoodDeckSF: Área do deck de madeira em pés quadrados.
+
+OpenPorchSF: Área da varanda aberta em pés quadrados.
+
+EnclosedPorch: Área da varanda fechada em pés quadrados.
+
+3SsnPorch: Área da varanda de três estações em pés quadrados.
+
+ScreenPorch: Área da varanda com tela em pés quadrados.
+
+PoolArea: Área da piscina em pés quadrados.
+
+PoolQC: Qualidade da piscina.
+
+       Ex	Excelente
+       Gd	Bom
+       TA	Média/típica
+       Fa	Regular
+       NA	Sem piscina
+
+Fence: Qualidade da cerca.
+
+       GdPrv	Boa privacidade
+       MnPrv	Privacidade mínima
+       GdWo	Boa cerca de madeira
+       MnWw	Madeira/arame mínimo
+       NA	Sem cerca
+
+MiscFeature: Recurso diverso não coberto em outras categorias.
+
+       Elev	Elevador
+       Gar2	Segunda garagem, se não descrita na seção de garagem
+       Othr	Outro
+       Shed	Galpão/depósito (acima de 100 pés quadrados)
+       TenC	Quadra de tênis
+       NA	Nenhum
+
+MiscVal: Valor em dólares do recurso diverso.
+
+MoSold: Mês da venda (MM).
+
+YrSold: Ano da venda (AAAA).
+
+SaleType: Tipo de venda.
+
+       WD 	Escritura de garantia - convencional
+       CWD	Escritura de garantia - à vista
+       VWD	Escritura de garantia - empréstimo VA
+       New	Casa recém-construída e vendida
+       COD	Escritura por ordem judicial/espólio
+       Con	Contrato com 15% de entrada e termos regulares
+       ConLw	Contrato com entrada baixa e juros baixos
+       ConLI	Contrato com juros baixos
+       ConLD	Contrato com entrada baixa
+       Oth	Outro
+
+SaleCondition: Condição da venda.
+
+       Normal	Venda normal
+       Abnorml	Venda anormal - troca, execução hipotecária, venda a descoberto
+       AdjLand	Compra de terreno adjacente
+       Alloca	Alocação - duas propriedades vinculadas com escrituras separadas; normalmente condomínio com unidade de garagem
+       Family	Venda entre familiares
+       Partial	A casa não estava concluída quando foi avaliada pela última vez; associada a casas novas
